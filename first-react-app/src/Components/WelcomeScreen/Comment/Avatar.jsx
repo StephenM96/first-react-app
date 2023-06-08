@@ -2,7 +2,7 @@ function Avatar(props) {
     return (
         <>
         <img className="Avatar" 
-        src={props.avatarUrl} 
+        src={props.author.avatarUrl} 
         alt={props.author.name} 
         />
         </>

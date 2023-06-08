@@ -23,7 +23,10 @@ function MoviesList() {
   ];
 
   const movieItems = movies.map(movie => (
-    // <li key={movie.id}>{movie.title}</li> //Changed to a component Movie
+    // <li key={movie.id}>{movie.title}</li> 
+    //Changed to a component Movie
+
+
     <Movie 
       key={movie.id} 
       title={movie.title} 
@@ -31,16 +34,14 @@ function MoviesList() {
       synopsis={movie.synopsis} 
     />
   ))
+
+
   //See error below
 
   return (
     <div className="MoviesList componentBox">
       <ul>
-        {movies.map(movie => (
-          // <li key={movie.id} className={movie.id}>{movie.title}</li>
           {movieItems} 
-          //React does not like this line of code for some reason - error says: "react-dom.development.js:14887 Uncaught Error: Objects are not valid as a React child (found: object with keys {movieItems}). If you meant to render a collection of children, use an array instead."
-        ))}
       </ul>
     </div>
   )

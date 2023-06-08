@@ -29,21 +29,21 @@ function App() {
     date: new Date(),
     text: "I hope you enjoy learning React!",
     author: {
-      Name: "Hello Kitty",
+      name: "Hello Kitty",
       avatarUrl: "https://placekitten.com/g/300/300",
     },
   };
 
   return (
     <>
-      {/* <div>
+      <div>
         <p>Test</p>
         <Comment
           author={comment.author}
           date={comment.date}
           text={comment.text}
         />
-      </div> */}
+      </div>
       <div>
         <MoviesList />
       </div>
