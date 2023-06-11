@@ -8,6 +8,12 @@ import FullName from "./Components/WelcomeScreen/Name/FullName";
 import ComplexComment from "./Components/WelcomeScreen/Comment/ComplexComment";
 import Comment from "./Components/WelcomeScreen/Comment/Comment";
 import MoviesList from "./Components/WelcomeScreen/Movies/MoviesList";
+import MoodChanger from './MoodChanger/MoodChanger'
+import Phrases from './Phrases/Phrases'
+import Weather from './Components/WelcomeScreen/Weather/Weather'
+import LogInForm from "./Components/WelcomeScreen/LogInForm/LogInForm";
+import SubmitForm from "./Components/WelcomeScreen/LogInForm/SubmitForm";
+import ExplodingBomb from "./Components/WelcomeScreen/ErrorMessage/ExplodingBomb";
 
 function App() {
   // const [count, setCount] = useState(10);
@@ -44,9 +50,33 @@ function App() {
           text={comment.text}
         />
       </div>
+
       <div>
         <MoviesList />
       </div>
+
+      {/* <div>
+        <MoodChanger />
+      </div> */}
+
+      {/* <div>
+        <Phrases />
+      </div> */}
+
+      {/* <div>
+        <Weather />
+      </div> */}
+
+      {/* <div>
+        <LogInForm />
+      </div> */}
+
+      {/* <div>
+        <SubmitForm />
+      </div> */}
+
+      <ExplodingBomb />
+      
     </>    
   );
 
