@@ -7,9 +7,11 @@ import ErrorMessage from "./Components/WelcomeScreen/ErrorMessage/ErrorMessage.j
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+
     {/* //explaining error handling across whole hierarchy 06/10/23 3:27 PM */}
     <ErrorBoundary FallbackComponent={ErrorMessage}>
       <App />
     </ErrorBoundary>
+    
   </React.StrictMode>
 );

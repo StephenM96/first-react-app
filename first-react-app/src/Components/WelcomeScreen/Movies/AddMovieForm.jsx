@@ -7,8 +7,12 @@ function AddMovieForm ({onAddMovie}){
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        //Use this for AddCatForm to create new object!!! 06/10/23 3:18 PM exercise 4
         const data = new FormData(e.target)
         console.log(Object.fromEntries(data))
+        //Use this for AddCatForm to create new object!!! 06/10/23 3:18 PM exercise 4
+
         onAddMovie({title, year, synopsis})
     }
 

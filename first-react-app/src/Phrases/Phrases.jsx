@@ -9,13 +9,17 @@ const phrases = new Map([
 
 function Phrases() {
     const [currentLanguage, setCurrentLanguage] = useState('english');
+    //brought this back by moving phrase.get into the <h3> tag below
+
     // const [phrase, setPhrase] = useState(phrases.get('english'))
     //Changed this to the 2 sections below
 
-    const [currentPhrase, setCurrentPhrase] = useState({
-        lang: 'english',
-        phrase: 'Happy Birthday'
-    })
+
+    //Set this up to remove by bringing phrase.get into <h3> tag below
+    // const [currentPhrase, setCurrentPhrase] = useState({
+    //     lang: 'english',
+    //     phrase: 'Happy Birthday'
+    // })
 
     // 06/10/23 10:40 AM Slide 60
     //Event handler

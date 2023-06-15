@@ -50,22 +50,29 @@ function App() {
           text={comment.text}
         />
       </div>
+      
+      <div>     
+          <Welcome name="students">
+          <p>Child element here!</p>
+          <h3>Hey hey hey!</h3>
+        </Welcome>
+      </div>
 
       <div>
         <MoviesList />
       </div>
 
-      {/* <div>
+      <div>
         <MoodChanger />
-      </div> */}
+      </div>
 
       {/* <div>
         <Phrases />
       </div> */}
 
-      {/* <div>
+      <div>
         <Weather />
-      </div> */}
+      </div>
 
       {/* <div>
         <LogInForm />
@@ -77,6 +84,7 @@ function App() {
 
       <ExplodingBomb />
       
+
     </>    
   );
 
@@ -110,11 +118,6 @@ function App() {
   //     </div>
   //     <Spidey countHere={count} superhero ={spiderman}/>
   //     <Spidey countHere={count2} superhero={batman} />
-
-  //     <Welcome name="students">
-  //       <p>Child element here!</p>
-  //       <h3>Hey hey hey!</h3>
-  //     </Welcome>
 
   //     <FullName first="Billy" last="Joe" />
 
